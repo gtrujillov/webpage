@@ -1,0 +1,406 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--Alice);
+    font-size: 16px;
+}
+
+:root {
+    --Alice : 'Alice', serif;
+    --Rubik : 'Rubik', sans-serif;
+    --background-color :rgb(250,241,228); 
+    --nav-color : rgb(131,19,11);
+    --cita-color : rgb(49, 122, 126);
+}
+
+header {
+    width: 100%;
+    background-image: url("../images/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+header h1 {
+    font-family: var(--Rubik);
+    font-size: 65px;
+    text-align: center;
+    margin-bottom: 25px;
+    width: 100%;
+    padding-top: 50px;
+    text-shadow: 3px 2px 0px #FF0909;
+}
+
+.nav-bar ul{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 35px;
+}
+
+.nav-bar li {
+    width: 12%;
+    padding: 20px;
+    background-color: var(--nav-color);
+    list-style: none;
+    border-radius: 25px 0 25px 0;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.nav-bar li>a{
+    text-decoration: none;
+    font-size: 20px;
+    color: aliceblue;
+    font-family: var(--Rubik);
+    font-weight: 600;
+    max-width: 960px;
+}
+
+.nav-bar li:hover{
+    background-color: white;
+    border: 1px solid var(--nav-color);
+}
+
+.nav-bar li:hover > a{
+    color: var(--nav-color);
+}
+
+footer {
+    width: 100%;
+    background-color: brown;
+    height: 150px;
+    padding-top: 30px;
+}
+
+footer p {
+    text-align: center;
+    line-height: 280%;
+    color: white;
+    font-size: 14px;
+}
+
+footer a{
+    color: white;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0px auto;
+    background-color: var(--background-color);
+    padding-bottom: 30px;
+}
+
+.container h4{
+    margin: 0 15px 15px 15px;
+}
+
+.container h2 {
+    font-family: var(--Rubik);
+    font-size: 40px;
+    text-align: center;
+    font-weight: 500;
+    color: rgb(134,35,32);
+    padding: 30px;
+}
+
+.container em {
+    color: var(--nav-color);
+}
+
+.container abbr {
+    color: var(--nav-color);
+}
+
+.container strong{ /*Estilo para corregir error de safari*/
+    font-weight: bold;
+}
+
+.container a {
+    color: var(--cita-color);
+}
+
+.red-box {
+    width: 600px;
+    margin: 0 auto;
+    border-bottom: solid 1px rgb(131,19,11);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+.red-box h3 {
+    line-height: 120%;
+    font-style: oblique;
+    font-family: var(--Rubik);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.container p{
+    margin: 0 15px 15px 15px;
+    text-indent: 25px;
+    line-height: 170%;
+    font-family: var(--Alice);
+    text-align: justify;
+}
+
+.container h4 {
+    font-size: 20px;
+    padding: 10px 0 10px 0;
+    color: rgb(134,35,32);
+
+}
+
+.grey-box {
+    background-color:rgb(249,249,249);
+    border-left: solid 10px rgb(203,203,203);
+    margin: 15px;
+    padding: 10px;
+    position: relative;
+}
+
+.grey-box p{
+    margin: 10px 0px 10px 0px;
+    text-indent: 40px;
+}
+
+.grey-box q::before{
+    font-size: 60px;
+    position: absolute;
+    left: -30px;
+    top: 25px;
+    color:rgb(168,168,168);
+}
+
+.grey-box q::after{
+    font-size: 60px;
+    position: absolute;
+    right: 270px;
+    top: 85px;
+     color:rgb(168,168,168);
+}
+.box-image figure>img{
+    width: 50%;
+    display : block;
+    margin: auto;
+    padding-top: 15px;
+    border-top: 2px solid rgb(168,168,168); 
+    box-shadow: 8px 9px 17px 0px rgba(0,0,0,0.46);
+    margin-bottom: 25px;
+}
+
+.box-image figcaption{
+    text-align: center;
+    font-size: 18px;
+    font-style: oblique;
+    color: rgb(53,64,84);
+}
+
+.box-image2 img {
+    display: block;
+    margin: 0px auto;
+    width: 50%;
+    padding-top: 15px;
+    border-top: 2px solid rgb(168,168,168); 
+    box-shadow: 8px 9px 17px 0px rgba(0,0,0,0.46);
+    margin-bottom: 25px;
+}
+
+.box-image2 figcaption{
+    text-align: center;
+    font-size: 18px;
+    font-style: oblique;
+    color: rgb(53,64,84);
+    margin-bottom: 0px;
+    padding-bottom: 45px;
+}
+
+.first-link{
+    font-size: 17px;
+}
+.first-link:hover{
+    color: var(--cita-color);
+    text-decoration: none;
+}
+
+.first-link:focus{
+     color: var(--cita-color);
+    text-decoration: none;
+}
+
+/*Alternativas*/
+
+article {
+    width: 30%;
+    height: 290px;
+    border: 1px solid rgb(112,135,134);
+    border-top: 80px solid rgb(112,135,134);
+    margin: 25px;
+    border-radius: 15px 5px 0  0;
+    box-shadow: 8px 9px 17px 0px rgba(0,0,0,0.46);
+}
+
+.container #title{
+    font-size: 20px;
+    padding: 30px 40px 30px 40px;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-bottom: 1px solid var(--nav-color);
+}
+
+.text {
+    padding: 7px;
+}
+
+.text > p {
+    display: inline;
+    padding: 5px;
+}
+
+.top-line,.bottom-line{
+    display:flex;
+}
+
+.top-line h2{
+    font-size: 18px;
+    text-align: right;
+    padding: 10px;
+    font-family: var(--Alice);
+}
+
+.bottom-line h2{
+    font-size: 18px;
+    text-align: right;
+    padding: 10px;
+    font-family: var(--Alice);
+}
+
+.green-span {
+    color: green;
+}
+.top-line img {
+    width: 20%;
+    border-radius: 50%;
+    margin-top: -60px;
+}
+
+.bottom-line img {
+    width: 20%;
+    border-radius: 50%;
+    margin-top: -50px;
+}
+
+/*Historia*/
+
+#historia-h2 {
+    text-align: left;
+    margin-left: 25px;
+    padding-top: 60px;
+    font-size: 30px;
+    font-family: var(--Alice);
+    color: black;
+}
+
+.historia-h3 {
+    text-align: left;
+    margin-left: 25px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    font-size: 30px;
+    font-family: var(--Alice);
+    color: var(--nav-color);
+    padding: 30px 0px 0px 30px;
+}
+
+#section-one {
+    margin-left: 12%;
+    padding-left: 35px;
+    margin-right: 12%;
+    border-left: 3px solid var(--nav-color);
+}
+
+#section-one li{
+    margin-left: 35px;
+    line-height: 150%;
+}
+
+.li-icon {
+    list-style-image: url(../images/logo_flash2.png);
+    font-size: 22px;
+}
+
+.li-quad {
+    list-style:square;
+    font-size: 16px;
+    color: black;
+    font-style: normal;
+}
+
+.listTwo {
+    margin-left: 120px;
+    margin-top: 2px;
+}
+
+.listTwo ul {
+    margin-left: 10px;
+    line-height: 150%;
+    list-style: none;
+}
+.li-macromedia-One {
+    font-weight: bold;
+}
+.li-macromedia {
+    font-style: oblique;
+}
+
+.container u {
+    text-decoration: underline dotted;
+    /*text-decoration-thickness: 2px;
+    Si aplico esta propiedad la linea punteado queda igual que en las imagenes del enunciado pero no me valida el CSS*/
+}
+
+#underline-red{
+    text-decoration-color: var(--nav-color);
+    color: var(--nav-color);
+}
+
+#section-two p{
+    margin-top: 20px;
+}
+
+#section-two {
+    margin-left: 12%;
+    padding-left: 35px;
+    margin-right: 12%;
+    border-left: 3px solid var(--nav-color);
+}
+
+#section-two li{
+    margin-left: 35px;
+    line-height: 150%;
+}
+
+#section-three p{
+    margin-top: 20px;
+}
+
+#section-three {
+    margin-left: 12%;
+    padding-left: 35px;
+    margin-right: 12%;
+    border-left: 3px solid var(--nav-color);
+}
+
+#section-three li{
+    margin-left: 35px;
+    line-height: 150%;
+}
+
+.li-circle {
+    list-style: circle;
+    font-size: 13px;
+}
